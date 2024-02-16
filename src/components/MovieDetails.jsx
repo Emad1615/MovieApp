@@ -48,32 +48,39 @@ function MovieDetails({ selectedId, setSelectedID }) {
       {isLoading && <Loader />}
       {error && <p className="text-center font-light">{error}</p>}
       {!isLoading && !error && (
-        <div className="relative">
-          <button
-            onClick={() => setSelectedID(null)}
-            className="absolute left-1 top-1 rounded-xl bg-slate-200 p-1 text-2xl hover:bg-slate-400"
-          >
-            🔙
-          </button>
-          <div className="flex flex-row gap-3 rounded-md bg-slate-800">
-            <div className="flex-none">
-              <img src={Poster} alt={Title} className="h-80 w-52 rounded-md" />
-            </div>
-            <div className="flex-grow-1  flex  flex-col justify-center">
-              <h4 className="font-semibold">{Title}</h4>
-              <p>
-                <span>{Released}</span> 🟣 <span>{Runtime}</span>
-              </p>
-              <p>Language | {Language}</p>
-              <p>{Genre}</p>
-              <p>
-                🎥 {Type} | 📆 {Year}
-              </p>
-              <p>⭐ {imdbRating} IMDb rating</p>
-              <p>Votes - {imdbVotes} IMDb votes</p>
+        <>
+          <div className="relative">
+            <button
+              onClick={() => setSelectedID(null)}
+              className="absolute left-1 top-1 rounded-xl bg-slate-200 p-1 text-2xl hover:bg-slate-400"
+            >
+              🔙
+            </button>
+            <div className="flex flex-row gap-3 rounded-md bg-slate-800">
+              <div className="flex-none">
+                <img
+                  src={Poster}
+                  alt={Title}
+                  className="h-80 w-52 rounded-md"
+                />
+              </div>
+              <div className="flex-grow-1  flex  flex-col justify-center">
+                <h4 className="font-semibold">{Title}</h4>
+                <p>
+                  <span>{Released}</span> 🟣 <span>{Runtime}</span>
+                </p>
+                <p>Language | {Language}</p>
+                <p>{Genre}</p>
+                <p>
+                  🎥 {Type} | 📆 {Year}
+                </p>
+                <p>⭐ {imdbRating} IMDb rating</p>
+                <p>Votes - {imdbVotes} IMDb votes</p>
+              </div>
             </div>
           </div>
-          <section className="m-5">
+
+          <section className="grid-row-[auto_auto] my-5 grid gap-5 ">
             <div className="m-auto w-10/12 rounded-md bg-slate-800 p-1 ">
               {isWatched ? (
                 <p className="m-0 p-2 text-center font-semibold">
@@ -92,7 +99,7 @@ function MovieDetails({ selectedId, setSelectedID }) {
                 </>
               )}
             </div>
-            <div className="m-5">
+            <div className="mx-16">
               <p className="text-justify font-extralight italic">{Plot}</p>
               <h6>Actors</h6>
               <blockquote className="border-l-4 border-l-slate-800 p-2">
@@ -117,7 +124,7 @@ function MovieDetails({ selectedId, setSelectedID }) {
               </div>
             </div>
           </section>
-        </div>
+        </>
       )}
     </>
   );
