@@ -1,0 +1,35 @@
+.cardslider {
+  position: relative;
+  height: 43vh;
+  width: 100%;
+  background-image: linear-gradient(
+      180deg,
+      rgba(18, 32, 43, 1) 0%,
+      rgba(18, 19, 19, 0.9472163865546218) 100%
+    ),
+    url("./../assets/Poster.jpg");
+  background-size: contain;
+  object-fit: contain;
+}
+.cardslider .card {
+  height: 25rem;
+  width: 25rem;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  font-family: "sans-serif";
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardslider .card img {
+  display: block;
+  height: 25rem;
+  width: 25rem;
+  margin: auto;
+  border-radius: 10px;
+}

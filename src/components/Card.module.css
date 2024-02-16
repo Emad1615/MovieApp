@@ -1,0 +1,103 @@
+.wrapper {
+  /* width: 33.33%; */
+  width: 25%;
+}
+.box {
+  position: relative;
+  max-height: 30rem;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0 1.4px 1.7px rgba(0, 0, 0, 0.017),
+    0 3.3px 4px rgba(0, 0, 0, 0.024), 0 6.3px 7.5px rgba(0, 0, 0, 0.03),
+    0 11.2px 13.4px rgba(0, 0, 0, 0.036), 0 20.9px 25.1px rgba(0, 0, 0, 0.043),
+    0 50px 60px rgba(0, 0, 0, 0.06);
+  margin: 1rem;
+  img {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.3s;
+  }
+  .frame {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    transform: translate(-50%, -50%);
+    top: 52%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .frame h3 {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: var(--color-light--2);
+    transform: scale(1.8);
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+    /* padding-top: 1rem; */
+  }
+  .buttons button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: white;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-image: linear-gradient(
+      180deg,
+      rgba(18, 32, 43, 1) 0%,
+      rgba(18, 19, 19, 0.6472163865546218) 100%
+    );
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  &:hover {
+    img {
+      transform: scale(1.8);
+      transition: all 3s;
+    }
+    .frame {
+      opacity: 1;
+
+      transition: all 0.3s;
+    }
+    .frame h3 {
+      transform: scale(1);
+      /* font-size: 2.5rem; */
+      transition: all 0.3s;
+    }
+    &:after {
+      opacity: 1;
+      transition: all 0.3s;
+    }
+  }
+}
+@media screen and (max-width: 880px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,77 @@
+.homeContainer {
+  background-image: linear-gradient(
+      180deg,
+      rgba(18, 32, 43, 1) 0%,
+      rgba(18, 19, 19, 0.9472163865546218) 100%
+    ),
+    url('./../assets/Poster.jpg');
+  height: 100vh;
+  background-size: cover;
+  object-fit: contain;
+}
+.homeContainer section {
+  height: calc(100% - 7rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+.homeContainer section h1 {
+  width: 100%;
+  font-size: 15rem !important;
+  text-align: center;
+  /* animation: wiggle infinite 5s alternate; */
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+.homeContainer section blockquote {
+  text-align: center;
+}
+.blockquote {
+  font-size: 1.5rem !important;
+  text-align: center;
+  font-weight: bold;
+  border-left: 5px solid var(--color-brand--1);
+  padding: 0.8rem 0;
+}
+.homeContainer section div {
+  display: flex;
+  gap: 1rem;
+}
+.homeContainer section div a {
+  text-decoration: none;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* background-image: linear-gradient(to right, #42484d 0%, #242a2e 100%); */
+  background-color: var(--color-brand--2);
+  transition: all 0.3s;
+  color: var(--color-dark--0);
+}
+.btnDesk {
+  padding: 1rem 3rem;
+}
+.btnMobile {
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+}
+.homeContainer section div a:hover {
+  transform: translateY(-2px);
+}

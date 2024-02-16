@@ -1,0 +1,73 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  /* background-color: var(--color-gray--); */
+  box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+.nav p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: "Monoton";
+  letter-spacing: 0.5rem;
+}
+.nav span {
+  font-size: 3rem;
+  animation: wiggle infinite 3s alternate;
+  transform-origin: bottom;
+  display: inline-block;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+  padding: 0;
+  margin: 0;
+}
+.nav ul li a {
+  display: block;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-font--);
+  transition: transform 0.3s; /* Animation */
+  font-weight: bold;
+}
+.nav ul li a:hover {
+  transform: scale(1.2);
+}
+.nav ul li a:global(.active) {
+  color: var(--color-brand--2);
+}
+.nav button {
+  border: none;
+  background-color: transparent;
+  color: var(--color-font--);
+  font-size: 1.5rem;
+}

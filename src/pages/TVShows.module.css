@@ -1,0 +1,15 @@
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(
+      180deg,
+      rgba(18, 32, 43, 1) 0%,
+      rgba(18, 19, 19, 0.9472163865546218) 100%
+    ),
+    url("./../assets/Poster.jpg");
+  background-size: contain;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
