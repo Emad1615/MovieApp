@@ -6,7 +6,7 @@ import StarRating from './StarRating';
 import { useEffect, useRef, useState } from 'react';
 import { addToWishList } from '../services/apiMovie';
 
-function MovieDetails({ selectedId, setSelectedID }) {
+function MovieDetails({ selectedId, setSelectedID, watchedList }) {
   const { movie, isLoading, error } = useMovieDetails(selectedId);
   const [rate, setRate] = useState(null);
   const [isLoadingList, setIsLoadingList] = useState(false);
@@ -38,7 +38,8 @@ function MovieDetails({ selectedId, setSelectedID }) {
     imdbRating,
     imdbVotes,
   } = movie;
-  const isWatched = false;
+  const isWatched =
+    watchedList.findIndex((x) => x.imdbID === movie.imdbID) > -1;
   useKey('Escape', () => {
     setSelectedID(null);
   });

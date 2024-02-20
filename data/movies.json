@@ -40,6 +40,47 @@
       "Website": "N/A",
       "Response": "True",
       "id": 1
+    },
+    {
+      "Title": "Troll",
+      "Year": "2022",
+      "Rated": "TV-14",
+      "Released": "01 Dec 2022",
+      "Runtime": "101 min",
+      "Genre": "Action, Adventure, Drama",
+      "Director": "Roar Uthaug",
+      "Writer": "Espen Aukan, Roar Uthaug",
+      "Actors": "Ine Marie Wilmann, Kim Falck, Mads Sjøgård Pettersen",
+      "Plot": "Deep in the Dovre mountain, something gigantic wakes up after a thousand years in captivity. The creature destroys everything in its path and quickly approaches Oslo.",
+      "Language": "Norwegian, English",
+      "Country": "Norway",
+      "Awards": "1 win & 1 nomination",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOWQzMDc5OTMtMjFiMy00M2I3LWIyZWMtODM4NTRhMGI2ZTRkXkEyXkFqcGdeQXVyNDAxNzcyNw@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "5.8/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "90%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "62/100"
+        }
+      ],
+      "Metascore": "62",
+      "imdbRating": "5.8",
+      "imdbVotes": "48,207",
+      "imdbID": "tt11116912",
+      "Type": "movie",
+      "DVD": "01 Dec 2022",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 2
     }
   ]
 }

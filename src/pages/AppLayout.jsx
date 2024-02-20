@@ -43,6 +43,7 @@ function AppLayout({
               key={selectedId}
               selectedId={selectedId}
               setSelectedID={setSelectedID}
+              watchedList={watchedList}
             />
           ) : (
             <>
@@ -50,6 +51,7 @@ function AppLayout({
               <WatchedMoviesList
                 watchedList={watchedList}
                 setWatchedList={setWatchedList}
+                setSelectedID={setSelectedID}
               />
             </>
           )}

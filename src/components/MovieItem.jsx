@@ -5,10 +5,10 @@ function MovieItem({ movie, setSelectedID }) {
       onClick={() =>
         setSelectedID((selectedID) => (selectedID === imdbID ? null : imdbID))
       }
-      className="flex flex-row gap-2 p-2 bg-gray-900 mb-2 rounded-md mr-5 hover:bg-violet-700 cursor-pointer"
+      className="mb-2 mr-5 flex cursor-pointer flex-row gap-2 rounded-md bg-gray-900 p-2 hover:bg-violet-700"
     >
-      <img src={Poster} alt={Title} className="flex-none w-20 h-24 rounded" />
-      <div className="flex flex-col justify-center w-full pr-4">
+      <img src={Poster} alt={Title} className="h-24 w-20 flex-none rounded" />
+      <div className="flex w-full flex-col justify-center pr-4">
         <h3>{Title}</h3>
         <div className="flex flex-row justify-between ">
           <span>📆 {Year}</span>
