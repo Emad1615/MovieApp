@@ -15,6 +15,8 @@ function AppLayout({
   error,
   selectedId,
   setSelectedID,
+  watchedList,
+  setWatchedList,
 }) {
   return (
     <div>
@@ -45,7 +47,10 @@ function AppLayout({
           ) : (
             <>
               <WatchedSummery />
-              <WatchedMoviesList />
+              <WatchedMoviesList
+                watchedList={watchedList}
+                setWatchedList={setWatchedList}
+              />
             </>
           )}
         </Box>

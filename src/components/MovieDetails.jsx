@@ -4,10 +4,12 @@ import Loader from './Loader';
 import { useKey } from '../hooks/useKey';
 import StarRating from './StarRating';
 import { useEffect, useRef, useState } from 'react';
+import { addToWishList } from '../services/apiMovie';
 
 function MovieDetails({ selectedId, setSelectedID }) {
   const { movie, isLoading, error } = useMovieDetails(selectedId);
   const [rate, setRate] = useState(null);
+  const [isLoadingList, setIsLoadingList] = useState(false);
   const numberOfRate = useRef(0);
   const {
     Actors,
@@ -43,6 +45,16 @@ function MovieDetails({ selectedId, setSelectedID }) {
   useEffect(() => {
     numberOfRate.current += 1;
   }, [rate]);
+  async function handlewatchedList(movie) {
+    try {
+      setIsLoadingList(true);
+      const data = await addToWishList(movie);
+      console.log(data);
+    } catch {
+    } finally {
+      setIsLoadingList(false);
+    }
+  }
   return (
     <>
       {isLoading && <Loader />}
@@ -80,7 +92,7 @@ function MovieDetails({ selectedId, setSelectedID }) {
             </div>
           </div>
 
-          <section className="grid-row-[auto_auto] my-5 grid gap-5 ">
+          <div className="my-5">
             <div className="m-auto w-10/12 rounded-md bg-slate-800 p-1 ">
               {isWatched ? (
                 <p className="m-0 p-2 text-center font-semibold">
@@ -91,15 +103,21 @@ function MovieDetails({ selectedId, setSelectedID }) {
                   <StarRating onSetRate={setRate} />
                   {rate && (
                     <div className="text-center">
-                      <button className="my-2 rounded bg-indigo-700 px-4  py-3 text-sm font-semibold uppercase tracking-widest transition-all duration-300 ease-out hover:scale-110 hover:bg-indigo-900  ">
-                        Add to wishlist
+                      <button
+                        disabled={isLoadingList}
+                        onClick={() => handlewatchedList(movie)}
+                        className="my-2 rounded bg-indigo-700 px-4  py-3 text-sm font-semibold uppercase tracking-widest transition-all duration-300 ease-out hover:scale-110 hover:bg-indigo-900  "
+                      >
+                        {isLoadingList
+                          ? 'placing movie...'
+                          : ' Add to watched list'}
                       </button>
                     </div>
                   )}
                 </>
               )}
             </div>
-            <div className="mx-16">
+            <div className="mx-16 my-5">
               <p className="text-justify font-extralight italic">{Plot}</p>
               <h6>Actors</h6>
               <blockquote className="border-l-4 border-l-slate-800 p-2">
@@ -123,7 +141,7 @@ function MovieDetails({ selectedId, setSelectedID }) {
                 <p className="underline">Writer {Writer}</p>
               </div>
             </div>
-          </section>
+          </div>
         </>
       )}
     </>

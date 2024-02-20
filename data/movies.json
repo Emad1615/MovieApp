@@ -1,3 +1,45 @@
 {
-  "movies": []
+  "movies": [
+    {
+      "Title": "Troll Hunter",
+      "Year": "2010",
+      "Rated": "PG-13",
+      "Released": "29 Oct 2010",
+      "Runtime": "103 min",
+      "Genre": "Drama, Fantasy, Horror",
+      "Director": "André Øvredal",
+      "Writer": "André Øvredal",
+      "Actors": "Otto Jespersen, Robert Stoltenberg, Knut Nærum",
+      "Plot": "A group of students investigates a series of mysterious bear killings, but learns that there are much more dangerous things going on. They start to follow a mysterious hunter, learning that he is actually a troll hunter.",
+      "Language": "Norwegian, English",
+      "Country": "Norway",
+      "Awards": "12 wins & 13 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTkyMTgxNzIwOF5BMl5BanBnXkFtZTcwNjYyNjM5NA@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "82%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "61/100"
+        }
+      ],
+      "Metascore": "61",
+      "imdbRating": "6.9",
+      "imdbVotes": "78,912",
+      "imdbID": "tt1740707",
+      "Type": "movie",
+      "DVD": "30 Dec 2014",
+      "BoxOffice": "$253,444",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 1
+    }
+  ]
 }
