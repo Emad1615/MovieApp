@@ -44,6 +44,7 @@ function AppLayout({
               selectedId={selectedId}
               setSelectedID={setSelectedID}
               watchedList={watchedList}
+              setWatchedList={setWatchedList}
             />
           ) : (
             <>

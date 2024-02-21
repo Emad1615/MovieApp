@@ -6,11 +6,17 @@ import StarRating from './StarRating';
 import { useEffect, useRef, useState } from 'react';
 import { addToWishList } from '../services/apiMovie';
 
-function MovieDetails({ selectedId, setSelectedID, watchedList }) {
+function MovieDetails({
+  selectedId,
+  setSelectedID,
+  watchedList,
+  setWatchedList,
+}) {
   const { movie, isLoading, error } = useMovieDetails(selectedId);
   const [rate, setRate] = useState(null);
   const [isLoadingList, setIsLoadingList] = useState(false);
   const numberOfRate = useRef(0);
+  const [isWatched, setIsWatched] = useState(false);
   const {
     Actors,
     Awards,
@@ -38,19 +44,56 @@ function MovieDetails({ selectedId, setSelectedID, watchedList }) {
     imdbRating,
     imdbVotes,
   } = movie;
-  const isWatched =
-    watchedList.findIndex((x) => x.imdbID === movie.imdbID) > -1;
+  useEffect(() => {
+    if (watchedList.findIndex((x) => x.imdbID === movie.imdbID) > -1) {
+      setIsWatched(true);
+      const currentRate = watchedList?.find(
+        (x) => x.imdbID === movie.imdbID,
+      ).rate;
+      setRate(currentRate);
+    }
+  }, [selectedId, movie.imdbID, watchedList]);
   useKey('Escape', () => {
     setSelectedID(null);
   });
   useEffect(() => {
-    numberOfRate.current += 1;
+    if (rate) numberOfRate.current++;
   }, [rate]);
   async function handlewatchedList(movie) {
     try {
       setIsLoadingList(true);
-      const data = await addToWishList(movie);
-      console.log(data);
+      const obj = {
+        Actors,
+        Awards,
+        BoxOffice,
+        Country,
+        DVD,
+        Director,
+        Genre,
+        Language,
+        Metascore,
+        Plot,
+        Poster,
+        Production,
+        Rated,
+        Ratings,
+        Released,
+        Response,
+        Runtime,
+        Title,
+        Type,
+        Website,
+        Writer,
+        Year,
+        imdbID,
+        imdbRating,
+        imdbVotes,
+        rate,
+        numberOfRate,
+      };
+      const data = await addToWishList(obj);
+      setWatchedList((prevMovies) => [...prevMovies, data]);
+      setSelectedID(null);
     } catch {
     } finally {
       setIsLoadingList(false);
@@ -97,7 +140,11 @@ function MovieDetails({ selectedId, setSelectedID, watchedList }) {
             <div className="m-auto w-10/12 rounded-md bg-slate-800 p-1 ">
               {isWatched ? (
                 <p className="m-0 p-2 text-center font-semibold">
-                  You rated with movie %X% ⭐️
+                  You have been added this movie to your watched list
+                  <br />
+                  <small className="text-[12px] font-semibold  text-slate-500">
+                    {rate && `and rated it, your rate is ${rate} ⭐`}
+                  </small>
                 </p>
               ) : (
                 <>

@@ -1,20 +1,19 @@
 {
   "movies": [
     {
-      "Title": "Troll Hunter",
-      "Year": "2010",
-      "Rated": "PG-13",
-      "Released": "29 Oct 2010",
-      "Runtime": "103 min",
-      "Genre": "Drama, Fantasy, Horror",
-      "Director": "André Øvredal",
-      "Writer": "André Øvredal",
       "Actors": "Otto Jespersen, Robert Stoltenberg, Knut Nærum",
-      "Plot": "A group of students investigates a series of mysterious bear killings, but learns that there are much more dangerous things going on. They start to follow a mysterious hunter, learning that he is actually a troll hunter.",
-      "Language": "Norwegian, English",
-      "Country": "Norway",
       "Awards": "12 wins & 13 nominations",
+      "BoxOffice": "$253,444",
+      "Country": "Norway",
+      "DVD": "30 Dec 2014",
+      "Director": "André Øvredal",
+      "Genre": "Drama, Fantasy, Horror",
+      "Language": "Norwegian, English",
+      "Metascore": "61",
+      "Plot": "A group of students investigates a series of mysterious bear killings, but learns that there are much more dangerous things going on. They start to follow a mysterious hunter, learning that he is actually a troll hunter.",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMTkyMTgxNzIwOF5BMl5BanBnXkFtZTcwNjYyNjM5NA@@._V1_SX300.jpg",
+      "Production": "N/A",
+      "Rated": "PG-13",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
@@ -29,58 +28,158 @@
           "Value": "61/100"
         }
       ],
-      "Metascore": "61",
+      "Released": "29 Oct 2010",
+      "Response": "True",
+      "Runtime": "103 min",
+      "Title": "Troll Hunter",
+      "Type": "movie",
+      "Website": "N/A",
+      "Writer": "André Øvredal",
+      "Year": "2010",
+      "imdbID": "tt1740707",
       "imdbRating": "6.9",
       "imdbVotes": "78,912",
-      "imdbID": "tt1740707",
-      "Type": "movie",
-      "DVD": "30 Dec 2014",
-      "BoxOffice": "$253,444",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
+      "rate": 10,
+      "numberOfRate": {
+        "current": 5
+      },
       "id": 1
     },
     {
-      "Title": "Troll",
-      "Year": "2022",
-      "Rated": "TV-14",
-      "Released": "01 Dec 2022",
-      "Runtime": "101 min",
-      "Genre": "Action, Adventure, Drama",
-      "Director": "Roar Uthaug",
-      "Writer": "Espen Aukan, Roar Uthaug",
-      "Actors": "Ine Marie Wilmann, Kim Falck, Mads Sjøgård Pettersen",
-      "Plot": "Deep in the Dovre mountain, something gigantic wakes up after a thousand years in captivity. The creature destroys everything in its path and quickly approaches Oslo.",
-      "Language": "Norwegian, English",
-      "Country": "Norway",
-      "Awards": "1 win & 1 nomination",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BOWQzMDc5OTMtMjFiMy00M2I3LWIyZWMtODM4NTRhMGI2ZTRkXkEyXkFqcGdeQXVyNDAxNzcyNw@@._V1_SX300.jpg",
+      "Actors": "Bryan Cranston, Aaron Paul, Anna Gunn",
+      "Awards": "Won 16 Primetime Emmys. 157 wins & 247 nominations total",
+      "Country": "United States",
+      "Director": "N/A",
+      "Genre": "Crime, Drama, Thriller",
+      "Language": "English, Spanish",
+      "Metascore": "N/A",
+      "Plot": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_SX300.jpg",
+      "Rated": "TV-MA",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "5.8/10"
+          "Value": "9.5/10"
         },
         {
           "Source": "Rotten Tomatoes",
-          "Value": "90%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "62/100"
+          "Value": "96%"
         }
       ],
-      "Metascore": "62",
-      "imdbRating": "5.8",
-      "imdbVotes": "48,207",
-      "imdbID": "tt11116912",
-      "Type": "movie",
-      "DVD": "01 Dec 2022",
-      "BoxOffice": "N/A",
-      "Production": "N/A",
-      "Website": "N/A",
+      "Released": "20 Jan 2008",
       "Response": "True",
+      "Runtime": "49 min",
+      "Title": "Breaking Bad",
+      "Type": "series",
+      "Writer": "Vince Gilligan",
+      "Year": "2008–2013",
+      "imdbID": "tt0903747",
+      "imdbRating": "9.5",
+      "imdbVotes": "2,095,908",
+      "rate": 9,
+      "numberOfRate": {
+        "current": 1
+      },
       "id": 2
+    },
+    {
+      "Actors": "Emilia Clarke, Peter Dinklage, Kit Harington",
+      "Awards": "Won 59 Primetime Emmys. 389 wins & 636 nominations total",
+      "Country": "United States, United Kingdom",
+      "Director": "N/A",
+      "Genre": "Action, Adventure, Drama",
+      "Language": "English",
+      "Metascore": "N/A",
+      "Plot": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for a millennia.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg",
+      "Rated": "TV-MA",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "9.2/10"
+        }
+      ],
+      "Released": "17 Apr 2011",
+      "Response": "True",
+      "Runtime": "57 min",
+      "Title": "Game of Thrones",
+      "Type": "series",
+      "Writer": "David Benioff, D.B. Weiss",
+      "Year": "2011–2019",
+      "imdbID": "tt0944947",
+      "imdbRating": "9.2",
+      "imdbVotes": "2,250,524",
+      "rate": 10,
+      "numberOfRate": {
+        "current": 1
+      },
+      "id": 3
+    },
+    {
+      "Actors": "Katheryn Winnick, Gustaf Skarsgård, Alexander Ludwig",
+      "Awards": "Won 1 Primetime Emmy. 47 wins & 134 nominations total",
+      "Country": "Ireland, Canada",
+      "Director": "N/A",
+      "Genre": "Action, Adventure, Drama",
+      "Language": "English, Old English, Norse, Old, Latin, French, Arabic, Greek, Ancient (to 1453), Russian",
+      "Metascore": "N/A",
+      "Plot": "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore--and raid--the distant shores across the ocean.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZWNlZmNiNzItYWMwNC00ODYxLThlNjYtMjU3NzlmNDQxMTY2XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_SX300.jpg",
+      "Rated": "TV-MA",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.5/10"
+        }
+      ],
+      "Released": "03 Mar 2013",
+      "Response": "True",
+      "Runtime": "44 min",
+      "Title": "Vikings",
+      "Type": "series",
+      "Writer": "Michael Hirst",
+      "Year": "2013–2020",
+      "imdbID": "tt2306299",
+      "imdbRating": "8.5",
+      "imdbVotes": "574,123",
+      "rate": 10,
+      "numberOfRate": {
+        "current": 1
+      },
+      "id": 4
+    },
+    {
+      "Actors": "David Oakes, Sam Corlett, Leo Suter",
+      "Awards": "Nominated for 1 Primetime Emmy. 3 wins & 15 nominations total",
+      "Country": "United States",
+      "Director": "N/A",
+      "Genre": "Action, Adventure, Drama",
+      "Language": "English, Latin",
+      "Metascore": "N/A",
+      "Plot": "Follow-up series to 'Vikings' set 100 years later and focusing on the adventures of Leif Erikson, Freydis, Harald Hardrada, and the Norman King William the Conqueror.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMmZlYTQ3NjQtZmIxNC00MzA4LTg1NDgtMmEzODk0MzA4NjQxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg",
+      "Rated": "TV-MA",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.3/10"
+        }
+      ],
+      "Released": "25 Feb 2022",
+      "Response": "True",
+      "Runtime": "2 min",
+      "Title": "Vikings: Valhalla",
+      "Type": "series",
+      "Writer": "Jeb Stuart",
+      "Year": "2022–",
+      "imdbID": "tt11311302",
+      "imdbRating": "7.3",
+      "imdbVotes": "55,078",
+      "rate": 8,
+      "numberOfRate": {
+        "current": 1
+      },
+      "id": 5
     }
   ]
 }

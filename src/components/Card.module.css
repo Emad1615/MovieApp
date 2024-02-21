@@ -7,9 +7,12 @@
   max-height: 30rem;
   overflow: hidden;
   border-radius: 7px;
-  box-shadow: 0 1.4px 1.7px rgba(0, 0, 0, 0.017),
-    0 3.3px 4px rgba(0, 0, 0, 0.024), 0 6.3px 7.5px rgba(0, 0, 0, 0.03),
-    0 11.2px 13.4px rgba(0, 0, 0, 0.036), 0 20.9px 25.1px rgba(0, 0, 0, 0.043),
+  box-shadow:
+    0 1.4px 1.7px rgba(0, 0, 0, 0.017),
+    0 3.3px 4px rgba(0, 0, 0, 0.024),
+    0 6.3px 7.5px rgba(0, 0, 0, 0.03),
+    0 11.2px 13.4px rgba(0, 0, 0, 0.036),
+    0 20.9px 25.1px rgba(0, 0, 0, 0.043),
     0 50px 60px rgba(0, 0, 0, 0.06);
   margin: 1rem;
   img {
@@ -54,7 +57,7 @@
     color: white;
   }
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     /* background-color: rgba(0, 0, 0, 0.6); */
     background-image: linear-gradient(
@@ -76,7 +79,6 @@
     }
     .frame {
       opacity: 1;
-
       transition: all 0.3s;
     }
     .frame h3 {
