@@ -180,6 +180,125 @@
         "current": 1
       },
       "id": 5
+    },
+    {
+      "Actors": "Jason Statham, Bingbing Li, Rainn Wilson",
+      "Awards": "5 wins & 6 nominations",
+      "BoxOffice": "$145,522,784",
+      "Country": "United States, China",
+      "DVD": "30 Oct 2018",
+      "Director": "Jon Turteltaub",
+      "Genre": "Action, Horror, Sci-Fi",
+      "Language": "English, Mandarin, Thai, Japanese",
+      "Metascore": "46",
+      "Plot": "A group of scientists exploring the Marianas Trench encounter the largest marine predator that has ever existed - the Megalodon.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTAxMGRmODYtM2NkYS00ZGRlLWE1MWItYjI1MzIwNjQwN2RiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+      "Production": "N/A",
+      "Rated": "PG-13",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "5.7/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "47%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "46/100"
+        }
+      ],
+      "Released": "10 Aug 2018",
+      "Response": "True",
+      "Runtime": "113 min",
+      "Title": "The Meg",
+      "Type": "movie",
+      "Website": "N/A",
+      "Writer": "Dean Georgaris, Jon Hoeber, Erich Hoeber",
+      "Year": "2018",
+      "imdbID": "tt4779682",
+      "imdbRating": "5.7",
+      "imdbVotes": "205,053",
+      "rate": 7,
+      "numberOfRate": {
+        "current": 1
+      },
+      "id": 6
+    },
+    {
+      "Actors": "Jason Statham, Jing Wu, Shuya Sophia Cai",
+      "Awards": "3 wins & 4 nominations",
+      "BoxOffice": "$82,600,317",
+      "Country": "United States, China",
+      "DVD": "25 Aug 2023",
+      "Director": "Ben Wheatley",
+      "Genre": "Action, Adventure, Horror",
+      "Language": "English",
+      "Metascore": "N/A",
+      "Plot": "A research team encounters multiple threats while exploring the depths of the ocean, including a malevolent mining operation.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTM2NTU1ZTktNjc4YS00NjNhLWE4NmYtOTM2YjFjOGUzNmYzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+      "Production": "N/A",
+      "Rated": "PG-13",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "5.0/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "27%"
+        }
+      ],
+      "Released": "04 Aug 2023",
+      "Response": "True",
+      "Runtime": "116 min",
+      "Title": "Meg 2: The Trench",
+      "Type": "movie",
+      "Website": "N/A",
+      "Writer": "Jon Hoeber, Erich Hoeber, Dean Georgaris",
+      "Year": "2023",
+      "imdbID": "tt9224104",
+      "imdbRating": "5.0",
+      "imdbVotes": "72,652",
+      "rate": 2,
+      "numberOfRate": {
+        "current": 1
+      },
+      "id": 7
+    },
+    {
+      "Actors": "Emma Corrin, Brit Marling, Harris Dickinson",
+      "Awards": "4 nominations",
+      "Country": "United States",
+      "Director": "N/A",
+      "Genre": "Drama, Mystery, Thriller",
+      "Language": "English",
+      "Metascore": "N/A",
+      "Plot": "Darby Hart, a Gen Z amateur sleuth, attempts to solve a murder at a secluded retreat.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzJjY2JlMzQtODIzZC00NTEzLWEyNmQtNjY4MDk2ZmI2MzE5XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
+      "Rated": "TV-MA",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.1/10"
+        }
+      ],
+      "Released": "14 Nov 2023",
+      "Response": "True",
+      "Runtime": "N/A",
+      "Title": "A Murder at the End of the World",
+      "Type": "series",
+      "Writer": "Zal Batmanglij, Brit Marling",
+      "Year": "2023",
+      "imdbID": "tt15227418",
+      "imdbRating": "7.1",
+      "imdbVotes": "19,723",
+      "rate": 8,
+      "numberOfRate": {
+        "current": 1
+      },
+      "id": 8
     }
   ]
 }

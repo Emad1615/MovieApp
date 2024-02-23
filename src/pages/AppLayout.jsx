@@ -48,7 +48,7 @@ function AppLayout({
             />
           ) : (
             <>
-              <WatchedSummery />
+              <WatchedSummery watchedList={watchedList} />
               <WatchedMoviesList
                 watchedList={watchedList}
                 setWatchedList={setWatchedList}
